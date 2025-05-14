@@ -10,6 +10,7 @@ export default function IncomeExpense() {
         .filter(tx => tx.amount < 0)
         .reduce((acc,tx) => acc + tx.amount,0)
         .toFixed(2);
+
     return (
         <div className="flex justify-around my-4">
             <p className="text-green-600 font-semibold">Income: Rs.{income}</p>
